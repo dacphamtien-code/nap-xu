@@ -1367,14 +1367,14 @@
         function updatePriceDisplay() {
             const qty = parseInt(document.getElementById('quantity').value) || 0;
             let unitPrice = prices.low;
-            let detail = '(290 đ/Xu)';
+            let detail = '(285 đ/Xu)';
 
             if (qty >= 100000) {
                 unitPrice = prices.high;
-                detail = `(285 đ/Xu)`;
+                detail = `(280 đ/Xu)`;
             } else if (qty >= 50000) {
                 unitPrice = prices.mid;
-                detail = `(286 đ/Xu)`;
+                detail = `(283 đ/Xu)`;
             }
 
             const total = qty * unitPrice;
